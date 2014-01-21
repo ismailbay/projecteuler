@@ -18,7 +18,7 @@ object Euler2 {
       fib2 = fibList.last
     }
 
-    fibList = fibList filter (n => n % 2 == 0)
-    println(fibList.reduce(_ + _))
+    fibList = fibList filter (_ % 2 == 0)
+    println(fibList.sum)
   }                             
 }
